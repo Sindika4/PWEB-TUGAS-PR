@@ -1,0 +1,124 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ff0080, #fa7dc4);
+    color: #fff;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 253, 250, 0.95);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 400px;
+    padding-bottom: 80px;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+input:hover, input:focus, button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background: #ff6f61;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e64c3c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 80px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff2cc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #333;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.task-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.task-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.task-info .deadline {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.task-checkbox {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+.completed .task-name {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.motivation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
